@@ -60,7 +60,7 @@ Please Select An Option
 
 <div class="col-md-12">
 <br>
-<a href="register" id="back"> Already Have Account? Login Now</a>
+<a href="login"> Already Have Account? Login Now</a>
 
 </div>
 </div>

@@ -427,6 +427,81 @@ list-style: none;
 .form-control{
   border-radius: 0px !important;
 }
+.progress{
+  height:35px !important;border-radius:0px !important;
+  margin-bottom: 10px !important
+}
+.progress-bar{
+  background:var(--blue) !important;text-align:left !important;padding-left:10px !important;
+}
+.verifications{
+  list-style: none;
+  padding: 0px;
+  text-align: left;
+  line-height: 35px;
+}
+.verifications li .fa-check-circle{
+color:#33B744;
+font-size: 20px;
+padding-right:12px
+}
+.verifications li .fa-times-circle{
+  color:#ff0000;
+  font-size: 20px;
+  padding-right:12px
+}
+.profile-completion{
+  border-radius: 180px !important
+}
+.lang-btn{
+  width: 30px;
+  height: 30px;
+  background:#083A6E;
+  color:white;
+  border:1px solid var(--blue);
+  border-radius: 50px;
+}
+.skill{
+  background: var(--blue);
+  padding: 5px 10px 5px 10px;
+  font-size: 14px;
+  color:white;
+  border-radius: 50px
+}
+#protabs{
+  background: #FAFAFA;
+}
+#protabs li{
+  color:black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-right: 1px solid #dedede;
+}
+#protabs li .active{
+  color:var(--blue) !important;
+  background: transparent !important;
+}
+#protabs .nav-item::before{
+  display: none;
+}
+#protabs .nav-item:hover:after{
+  opacity: 0
+}
+.five-stars i{
+  color:#ffb33e;
+}
+.project-date{
+  color:#aaa;
+}
+.modal-content{
+  border-radius: 0px !important
+}
+.trash{
+  color:#aaa; font-size:14px; cursor:pointer
+}
+
 @media (max-width:768px) {
 .content .dheading{
   font-size:48px;

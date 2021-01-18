@@ -24,7 +24,6 @@ $(document).ready(function(){
     }
 
   });
-
   $('#back').click(function(){
       $('#first').show();
       $('#second').hide();
@@ -74,5 +73,4 @@ $(document).ready(function(){
 
 
 });
-
 </script>

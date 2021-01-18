@@ -77,6 +77,24 @@ All Rights Reserved &copy <?php echo date('Y') ?> Bestwork.pk | Powered & Develo
 
   </body>
 </html>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="https://kit.fontawesome.com/fefe513ed0.js" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript">
+function testAnim(x) {
+  $('.modal .modal-dialog').attr('class', 'modal-dialog ' + x + '  animated');
+    $('.modal .modal-dialog .modal-lg').attr('class', 'modal-dialog ' + x + '  animated');
+};
+$('.modal').on('show.bs.modal', function (e) {
+var anim = "fadeInUp";
+    testAnim(anim);
+})
+$('.modal').on('hide.bs.modal', function (e) {
+var anim = "fadeOutDown";
+    testAnim(anim);
+});
+
+</script>

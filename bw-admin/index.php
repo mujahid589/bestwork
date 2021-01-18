@@ -1,10 +1,11 @@
+<?php session_start();
+ ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<?php include('include/head.php'); ?>
 </head>
 <?php
-session_start();
 if(isset($_SESSION['admin'])){
   header('location:home.php');
 }
@@ -12,15 +13,20 @@ if (isset($_POST['submit'])) {
 	$email=$_POST['email'];
 	$password=$_POST['password'];
 	// echo $name;
-	$query=mysqli_query($db,"select * from users where email='$email' and password='$password' and type='2' ");
+	$query=mysqli_query($db,"select * from users where email='$email' and password='$password' and type='0' ");
 	$count=mysqli_num_rows($query);
 	// echo $count;
 	if($count==1){
 		$getdata=mysqli_fetch_array($query);
 		// echo $getdata['userid'];
-		$_SESSION['admin']=$getdata['userid'];
+		$_SESSION['admin']=$getdata['uid'];
 		// echo $_SESSION['admin'];
-		header('Location:home.php');
+		// header('location:home.php');
+		?>
+		<script type="text/javascript">
+			window.location.href='home.php';
+		</script>
+		<?php
 	}
 	else {
 		$msg="<div class='alert alert-danger'>Incorrect Username/Password</div>";
