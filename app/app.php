@@ -12,10 +12,12 @@
       else {
       require html."/nav.inc.php";
       }
+      require __DIR__."/functions/conditions.php";
 
 
       if(page=="" || page == "home"){
         require html."/home/main.php";
+
       }
 
       else if(page=="register"){
@@ -46,9 +48,27 @@
           redirect("login");
         }
       }
+      else if(page=="jobs"){
+        if(fLoggedin()){
+          require html."/jobs/main.php";
+        }
+        else {
+          redirect("login");
+        }
+      }
+      else if(page=="complete-profile"){
+        if(fLoggedin()){
+          require html."/complete-profile/main.php";
+        }
+        else if(cLoggedin()){
+          require html."/complete-profile-client/main.php";
+        }
+      }
+
       else if(page=="logout"){
         session_unset();
         session_destroy();
+        $status="";
         redirect('login');
       }
       else if(page=="my-profile"){

@@ -52,16 +52,25 @@
     <button class="lang-btn" style="position:absolute;right:40px;top:0px;z-index:1000" data-toggle="modal" data-target="#addexp"> <i class="fa fa-plus"></i> </button>
 
   <div class="col-md-12" id="experiences">
-    <h4>Web Developer at Softileo</h4>
-    <p> Softileo, Sargodha &nbsp; <i class="fa fa-edit trash"></i>  <i class="fa fa-trash trash"></i> <br>
+    <?php
+    $uid=$user['uid'];
+    $getexperienes=select("experience","where pid='$pid' order by exid desc");
+    while ($row=records($getexperienes)) {
+      ?>
+
+    <h4><?php echo $row['title'] ?></h4>
+    <p> <?php echo $row['company'] ?> - <?php echo $row['location'] ?> &nbsp; <i class="fa fa-edit trash"></i>  <i class="fa fa-trash trash"></i> <br>
       <span class="project-date">
-        25 July 2019 - 15 January 2021
+        <?php echo $row['datefrom'] ?> - <?php echo $row['dateto']; ?>
       </span>
     </p>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <?php echo $row['description'] ?>
     </p>
     <hr>
+    <?php
+  }
+   ?>
   </div>
   <div class="clearfix">
 

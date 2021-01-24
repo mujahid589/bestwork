@@ -103,7 +103,7 @@
                 </div>
                 <div class="col-md-12">
                   <span id="lang-error"></span>
-                  <button class="blue_btn" id="lang-btn" onclick="addLanguage(<?php echo $user['uid'] ?>)">Add Language</button>
+                  <button class="blue_btn" id="lang-btn" onclick="addLanguage(<?php echo $pid ?>)">Add Language</button>
                 </div>
                 <div class="clearfix">
 
@@ -163,8 +163,8 @@
 
                       <div class="col-md-12">
                         <br>
-                        <span id="lang-error"></span>
-                        <button class="blue_btn" id="lang-btn" onclick="addLanguage(<?php echo $user['uid'] ?>)">Add Language</button>
+                        <span id="exp-error"></span>
+                        <button class="blue_btn" id="exp-btn" onclick="addExperience(<?php echo $pid ?>)">Add Language</button>
                       </div>
                       <div class="clearfix">
 

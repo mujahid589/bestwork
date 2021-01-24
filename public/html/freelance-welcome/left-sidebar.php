@@ -89,9 +89,7 @@
             <div class="col-sm-9 text-left">
               <h4>Languages</h4>
             </div>
-            <div class="col-sm-3">
-              <button class="lang-btn" data-toggle="modal" data-target="#myModal"> <i class="fa fa-plus"></i> </button>
-            </div>
+
             <div class="clearfix">
 
             </div>
@@ -102,8 +100,7 @@
             $lang=select("languages","where pid='$pid' order by lid desc");
             while ($row=records($lang)) {
               ?>
-              <li id="lan<?php echo $row['lid']; ?>"> <?php echo $row['language'] ?> - <?php echo $row['level'] ?> &nbsp; <i class="fa fa-trash trash" onclick="deletelang(<?php echo $pid ?>,
-                <?php echo $row['lid'] ?>)"></i> </li>
+              <li id="lan<?php echo $row['lid']; ?>"> <?php echo $row['language'] ?> - <?php echo $row['level'] ?> &nbsp; </li>
               <?php
             }
              ?>

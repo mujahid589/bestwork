@@ -10,12 +10,19 @@ if (isset($_POST['submit'])) {
       if($ifexists==1){
         $data=records($query);
         $type=$data['type'];
+        $uid=$data['uid'];
         if($type==1){
-          $_SESSION['pid']=$data['uid'];
+          $prof=select("profs","where uid='$uid'");
+          $datapro=records($prof);
+          $_SESSION['uid']=$uid;
+          $_SESSION['pid']=$datapro['pid'];
           redirect("freelancer-dashboard");
         }
         else if($type==2){
-          $_SESSION['cid']=$data['uid'];
+          $client=select("clients","where uid='$uid'");
+          $datacli=records($client);
+          $_SESSION['uid']=$uid;
+          $_SESSION['cid']=$datacli['cid'];
           redirect("client-dashboard");
         }
       }else {

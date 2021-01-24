@@ -1,1 +1,4 @@
-<h1>Welcome Professional</h1>
+<?php
+include 'left-sidebar.php';
+include 'stats.php';
+ ?>

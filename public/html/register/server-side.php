@@ -24,7 +24,10 @@ if (isset($_POST['submit'])) {
         $action=insert("users","name,username,email,password,timezone,type","'$name','$uname','$email','$password','$timezone','$type'");
         if($action){
           $id=lastid();
-          $_SESSION['pid']=$id;
+          $actpro=insert("profs","status,uid","'0',$id");
+          $plid=lastid();
+          $_SESSION['uid']=$id;
+          $_SESSION['pid']=$plid;
           redirect('freelancer-dashboard');
         }
         else {
@@ -35,7 +38,11 @@ if (isset($_POST['submit'])) {
         $action=insert("users","name,username,email,password,timezone,type","'$name','$uname','$email','$password','$timezone','$type'");
         if($action){
           $id=lastid();
-          $_SESSION['cid']=$id;
+          $actcli=insert("prof","status","'0'");
+          $actpro=insert("clients","status,uid","'0',$id");
+          $clid=lastid();
+          $_SESSION['uid']=$id;
+          $_SESSION['cid']=$clid;
           redirect('client-dashboard');
         }
         else {
