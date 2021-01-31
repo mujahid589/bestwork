@@ -1,5 +1,3 @@
-<?php session_start();
- ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,12 +19,7 @@ if (isset($_POST['submit'])) {
 		// echo $getdata['userid'];
 		$_SESSION['admin']=$getdata['uid'];
 		// echo $_SESSION['admin'];
-		// header('location:home.php');
-		?>
-		<script type="text/javascript">
-			window.location.href='home.php';
-		</script>
-		<?php
+		header('location:home.php');
 	}
 	else {
 		$msg="<div class='alert alert-danger'>Incorrect Username/Password</div>";
@@ -36,8 +29,8 @@ if (isset($_POST['submit'])) {
 <body>
 	<div class="login-wrap customscroll d-flex align-items-center flex-wrap justify-content-center pd-20">
 		<div class="login-box bg-white box-shadow pd-30 border-radius-5">
-			<img src="/media/main/logo.png" alt="login"  style="width:250px !important;display:block;margin:0 auto">
-			<h6 class="text-center mb-30">Login | Management Portal</h6>
+			<img src="images/logo.png" alt="login" width="70%" style="display:block;margin: 0 auto;margin-bottom:20px">
+			<h2 class="text-center mb-30">Login</h2>
 			<?php if(!empty($msg)){
 				echo $msg;
 			} ?>

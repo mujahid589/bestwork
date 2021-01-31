@@ -13,12 +13,12 @@
 					<div class="row">
 						<div class="col-md-6 col-sm-12">
 							<div class="title">
-								<h4>Manage Users</h4>
+								<h4>Manage Clients</h4>
 							</div>
 							<nav aria-label="breadcrumb" role="navigation">
 								<ol class="breadcrumb">
 									<li class="breadcrumb-item"><a href="home.php">Home</a></li>
-									<li class="breadcrumb-item active" aria-current="page">Manage Users</li>
+									<li class="breadcrumb-item active" aria-current="page">Manage Clients</li>
 								</ol>
 							</nav>
 						</div>
@@ -47,7 +47,7 @@
   						</div>
   					</div>
   					<div class="row">
-  						<table class="stripe hover data-table-export multiple-select-row nowrap">
+  						<table class="stripe hover data-table-export nowrap">
   							<thead>
   								<tr>
                     <th>Sr.</th>
@@ -60,8 +60,8 @@
   							<tbody>
                   <?php
                   $a=1;
-                  $query=mysqli_query($db,"select * from users where type='1' order by userid desc");
-                  while ($row=mysqli_fetch_array($query)) {
+                  $query=mysqli_query($db,"select * from users where type='2' order by uid desc");
+                  while ($row=mysqli_fetch_array($query)){
                     ?>
 
 
@@ -76,9 +76,7 @@
   												<i class="fa fa-ellipsis-h"></i>
   											</a>
   											<div class="dropdown-menu dropdown-menu-right">
-  												 <a class="dropdown-item" href="view-orders.php?user=<?php echo $row['userid'] ?>"><i class="fa fa-eye"></i> View Orders</a>
-  												<!--<a class="dropdown-item" href="#"><i class="fa fa-pencil"></i> Edit</a> -->
-  												<a class="dropdown-item" href="delete.php?uid=<?php echo $row['userid'] ?>"><i class="fa fa-trash"></i> Delete</a>
+  												<a class="dropdown-item" href="delete.php?ucid=<?php echo $row['uid'] ?>"><i class="fa fa-trash"></i> Delete</a>
   											</div>
   										</div>
                     </td>

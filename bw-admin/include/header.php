@@ -3,8 +3,8 @@
 		<div class="header-right">
 			<div class="brand-logo">
 				<a href="index.php">
-					<!-- <img src="vendors/images/logo.png" alt="" class="mobile-logo"> -->
-					<h2>KhareedLo</h2>
+					<img src="images/logo.png" alt="" class="mobile-logo">
+					<!-- <h2>KhareedLo</h2> -->
 				</a>
 			</div>
 			<div class="menu-icon">
@@ -17,7 +17,7 @@
 				<div class="dropdown">
 					<a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown">
 						<span class="user-icon"><i class="fa fa-user-o"></i></span>
-						<span class="user-name">Mujahid Farooq</span>
+						<span class="user-name"><?php echo $ad['name'] ?></span>
 					</a>
 					<div class="dropdown-menu dropdown-menu-right">
 						<a class="dropdown-item" href="profile.php"><i class="fa fa-user-md" aria-hidden="true"></i> Profile</a>

@@ -62,6 +62,8 @@
         }
         else if(cLoggedin()){
           require html."/complete-profile-client/main.php";
+        }else {
+          redirect("login");
         }
       }
 
@@ -72,7 +74,30 @@
         redirect('login');
       }
       else if(page=="my-profile"){
+        if(fLoggedin()){
         require html."/freelancer-my-profile/main.php";
+      }else {
+        redirect("login");
+      }
+      }
+      else if(page=="my-earnings"){
+        if(fLoggedin()){
+        require html."/my-earnings/main.php";
+      }else {
+        redirect("login");
+      }
+      }
+      else if(page=="blog"){
+        require html."/blog/main.php";
+      }
+      else if(page=="article-detail"){
+        require html."/article-detail/main.php";
+      }
+      else if(page=="faqs"){
+        require html."/faqs/main.php";
+      }
+      else if(page=="faq-category"){
+        require html."/faq-category/main.php";
       }
       else {
         require html."/404/main.php";

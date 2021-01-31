@@ -1,5 +1,4 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400&display=swap');
 
 /*==============================================================
 
@@ -31,8 +30,7 @@ body {
 	margin: 0;
 	padding: 0;
 	-webkit-font-smoothing: antialiased;
-	/* font-family: 'Nunito Sans', sans-serif !important; */
-	font-family: 'Nunito Sans', sans-serif !important;
+	font-family: 'Work Sans', sans-serif;
 	font-weight: 400;
 	width: 100%;
 	min-height: 100%;
@@ -56,8 +54,7 @@ img {
 input, textarea, select {
 	outline: none;
 	resize: none;
-	/* font-family: 'Nunito Sans', sans-serif !important; */
-	font-family: 'Nunito Sans', sans-serif !important;
+	font-family: 'Work Sans', sans-serif;
 }
 a, input, button {
 	outline: none !important;
@@ -70,8 +67,7 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 0;
 	font-weight: normal;
 	color: #131e22;
-	/* font-family: 'Nunito Sans', sans-serif !important; */
-	font-family: 'Nunito Sans', sans-serif !important;
+	font-family: 'Work Sans', sans-serif;
 }
 img {
 	border: 0;
@@ -257,7 +253,7 @@ p {
 	font-weight: 400;
 	padding: 0.55rem 1rem;
 	color: #667f87;
-	font-family: 'Nunito Sans', sans-serif !important;
+	font-family: 'Work Sans', sans-serif;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
@@ -268,7 +264,7 @@ p {
 	color: #667f87;
 }
 .form-control{
-	font-family: 'Nunito Sans', sans-serif !important;
+	font-family: 'Work Sans', sans-serif;
 	color: #131e22;
 	font-weight: 500;
 	height: 38px;
@@ -382,7 +378,7 @@ textarea.form-control{
 /* ---------------- form validation class -------------*/
 
 .btn{
-	font-family: 'Nunito Sans', sans-serif !important;
+	font-family: 'Work Sans', sans-serif;
 	letter-spacing: 0.035em;
 }
 .btn-lg, .btn-group-lg > .btn{
@@ -513,7 +509,7 @@ textarea.form-control{
 	font-weight: 400;
 	padding: 0.55rem 1rem;
 	color: #667f87;
-	font-family: 'Nunito Sans', sans-serif !important;
+	font-family: 'Work Sans', sans-serif;
 	-webkit-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
@@ -642,7 +638,7 @@ textarea.form-control{
 	vertical-align: middle;
 	margin-left: 5px;
 	color: #131e22;
-	font-family: 'Nunito Sans', sans-serif !important;
+	font-family: 'Work Sans', sans-serif;
 }
 .user-info-dropdown .dropdown-item{
 	position: relative;
@@ -693,7 +689,7 @@ textarea.form-control{
 	min-height: 75px;
 	color: #33484f;
 	font-size: 15px;
-	font-family: 'Nunito Sans', sans-serif !important;
+	font-family: 'Work Sans', sans-serif;
 }
 .notification-list ul li a img{
 	width: 50px;
@@ -712,7 +708,7 @@ textarea.form-control{
 	font-size: 18px;
 	color: #33484f;
 	font-weight: 500;
-	font-family: 'Nunito Sans', sans-serif !important;
+	font-family: 'Work Sans', sans-serif;
 }
 .notification-list ul li a h3 span{
 	float: right;
@@ -827,7 +823,7 @@ textarea.form-control{
 	letter-spacing: 0.050em;
 	font-weight: 500;
 	line-height: 45px;
-	font-family: 'Nunito Sans', sans-serif !important;
+	font-family: 'Work Sans', sans-serif;
 	padding: 0px 20px 0px;
 	text-align: center;
 }
@@ -892,7 +888,7 @@ textarea.form-control{
 	color: #131e22;
 	font-weight: 500;
 	position: relative;
-	font-family: 'Nunito Sans', sans-serif !important;
+	font-family: 'Work Sans', sans-serif;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
@@ -972,7 +968,7 @@ textarea.form-control{
 	color: #131e22;
 	font-weight: 500;
 	position: relative;
-	font-family: 'Nunito Sans', sans-serif !important;
+	font-family: 'Work Sans', sans-serif;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
@@ -1100,7 +1096,7 @@ textarea.form-control{
 	font-weight: 400;
 	padding: 0.55rem 1rem;
 	color: #667f87;
-	font-family: 'Nunito Sans', sans-serif !important;
+	font-family: 'Work Sans', sans-serif;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;

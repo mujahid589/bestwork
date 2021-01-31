@@ -152,7 +152,7 @@
         <div class="col-md-4">
           <br>
           <button class="blue_btn" id="lang-btn" onclick="addLanguage(<?php echo $pid ?>)" style="margin-top:5px">Add Language</button>
-
+O
         </div>
         <div class="col-md-12">
           <span id="lang-error"></span>
