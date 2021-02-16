@@ -121,5 +121,5 @@ You need following things installed on your pc before you start running script.
   - go to import and select that bestwork.sql file and import it.
    ##### Step 7
   - Now if you have followed all steps properly, then go to browser and run http://bestwork.local
-	 - It should work.
+  - It should work.
 
