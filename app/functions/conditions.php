@@ -12,5 +12,13 @@
 // }
 //
 // }
+// if(fLoggedin() || cLoggedin()){
+//
+// if(page!="complete-profile"){
+// if($client['status']==0 || $client['status']==1 || $client['status']==3){
+//  redirect('complete-profile');
+// }
+// }
+// }
 
  ?>

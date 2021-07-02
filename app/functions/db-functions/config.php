@@ -10,7 +10,7 @@ if(isset($_SESSION['uid']) && isset($_SESSION['pid'])){
   $GLOBALS['user']=records($getuserdata);
   $getprofdata=select("profs","where pid='$PID'");
   $GLOBALS['prof']=records($getprofdata);
-
+  // date_default_timezone_set('Asia/Karachi');
   return true;
   }
   else {
@@ -29,6 +29,9 @@ if(isset($_SESSION['uid']) && isset($_SESSION['cid'])){
   $GLOBALS['user']=records($getuserdata);
   $getclientdata=select("clients","where cid='$CID'");
   $GLOBALS['client']=records($getclientdata);
+
+  // date_default_timezone_set('Asia/Karachi');
+
   return true;
 }else {
   return false;

@@ -52,6 +52,7 @@ return mysqli_query($db,"select * from $table $query ");
 #This function works against general query depending upon need.
 
 function query($query){
+  $db=$GLOBALS['DB'];
 $query=mysqli_query($db,$query);
 if($query){
   return true;

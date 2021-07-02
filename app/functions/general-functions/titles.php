@@ -12,4 +12,7 @@ if(page=="about"){
 if(page=="register"){
   $title="Register An Account | Find Dream Freelance Jobs at Bestwork.pk ";
 }
+if(page=="messages"){
+  $title="Messages | Bestwork ";
+}
  ?>

@@ -1,4 +1,4 @@
-<div class="navigation-wrap bg-light start-header start-style">
+<div class="navigation-wrap bg-light start-header start-style" id="header">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -22,7 +22,7 @@
                 <a class="nav-link" href="#">My Contracts</a>
               </li>
               <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                <a class="nav-link" href="#">Messages</a>
+                <a class="nav-link" href="/messages">Messages</a>
               </li>
               <li class="nav-item dropdown pl-4 pl-md-0 ml-0 ml-md-4">
                     <a class="nav-link dropdown-toggle" href="#" id="" data-toggle="dropdown">
@@ -44,7 +44,7 @@
                   <a class="nav-link" href="#"> <i class="fa fa-user-circle"></i> <?php echo $user['name'] ?></a>
                 </li>
                 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                  <a class="nav-link" href="logout"> <i class="fa fa-power-off"></i></a>
+                  <a class="nav-link" href="/logout"> <i class="fa fa-power-off"></i></a>
                 </li>
             </ul>
           </div>
@@ -54,3 +54,23 @@
     </div>
   </div>
 </div>
+
+<?php
+
+
+
+if($client['status']==2 ){
+        ?>
+        <div class="container">
+            <div class="row">
+        <div class="col-md-12 ">
+            <div class="_card text-left">
+                    Your Profile is under review. it may take 24 to 72 hours to complete review. You can post job after getting approval. Meanwhile you can scroll platform for learning purposes.
+            </div>
+        </div>
+            </div>
+        </div>
+    <?php
+    }
+
+?>

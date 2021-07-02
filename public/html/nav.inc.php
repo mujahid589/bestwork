@@ -27,7 +27,7 @@
                 <a class="nav-link" href="#">Community</a>
               </li>
               <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                <a class="nav-link" href="register">Don't have an account ? <span class="blink">Sign Up</span> </a>
+                <a class="nav-link" href="/register">Don't have an account ? <span class="blink">Sign Up</span> </a>
               </li>
             </ul>
           </div>

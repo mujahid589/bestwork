@@ -1,3 +1,18 @@
+<?php
+$query=select("contract","where pid='$pid'");
+$sum=0;
+while ($row=records($query)) {
+    $conid=$row['conid'];
+  $jid=$row['jid'];
+
+  $query2=select("jobs","where jobid='$jid'");
+  $jdata=records($query2);
+
+  $query3=select("escrow","where contarctid='$conid' and status=1");
+  $edata=records($query3);
+  $sum=$sum + $edata['amount'];
+}
+ ?>
 <div class="margin">
 
 </div>

@@ -1,7 +1,7 @@
 	<div class="left-side-bar">
 		<div class="brand-logo">
 			<a href="index.php">
-				<img src="/images/logo.png" alt="">
+				<img src="./images/logo.png" alt="">
 				<!-- <h2>KhareedLo</h2> -->
 			</a>
 		</div>
@@ -17,8 +17,22 @@
 					</li>
 
 
+                    <li class="dropdown">
+                        <a href="requests.php" class="dropdown-toggle no-arrow">
+                            <span class="fa fa-tasks"></span><span class="mtext"> Manage Profile Requests </span>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:;" class="dropdown-toggle">
+                            <span class="fa fa-book"></span><span class="mtext">Manage Skills</span>
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="skills.php">Main Skills</a></li>
+                            <li><a href="sub-skills.php">Sub Skills</a></li>
+                        </ul>
+                    </li>
 
-					<li class="dropdown">
+                    <li class="dropdown">
 						<a href="#" class="dropdown-toggle no-arrow">
 							<span class="fa fa-tasks"></span><span class="mtext"> Manage Jobs </span>
 						</a>

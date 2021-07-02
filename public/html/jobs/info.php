@@ -2,11 +2,9 @@
 <div class="col-md-3 ">
   <div class="_card">
     <div class="row text-left">
-      <div class="col-md-3">
-        <img src="media/users/professionals/mujahid.png" style="border-radius:50%" width="50" alt="">
-      </div>
-      <div class="col-md-9">
-        <h5>Mujahid Farooq <br>
+
+      <div class="col-md-12">
+        <h5> <?php echo $user['name'] ?> <br>
       <small>  <a href="my-profile" class="badge badge-info">View My Profile</a> </small>
     </h5>
       </div>
@@ -30,10 +28,20 @@
   <div class="_card text-left">
     <h5>Bids & Proposals</h5>
     <p>
-      
-      Available Bids: 70 <br>
-      Submitted Proposals: 34 <br>
-      Active Proposals: 3
+      <?php
+      $connects=select("connects","where pid='$pid'");
+      $pcon=records($connects);
+
+      $connects=select("proposals","where pid='$pid'");
+      $pcon1=rows($connects);
+
+      $connects=select("proposals","where pid='$pid' and status='1'");
+      $pcon2=rows($connects);
+
+       ?>
+      Available Bids: <?php echo $pcon['total'] ?> <br>
+      Submitted Proposals: <?php echo $pcon1 ?> <br>
+      Active Proposals: <?php echo $pcon2 ?>
     </p>
   </div>
 
